@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190" width="720" height="190" role="img" aria-label="Animated ASCII-arcade Breakout in Catppuccin Mocha">
+  <style>
+    .bg { fill: #1e1e2e; }
+    .frame { fill: none; stroke: #313244; stroke-width: 1; }
+    .r1 { fill: #f38ba8; }   /* red */
+    .r2 { fill: #fab387; }   /* peach */
+    .r3 { fill: #a6e3a1; }   /* green */
+    .ball { fill: #cdd6f4; }     /* text */
+    .paddle { fill: #cba6f7; }   /* mauve */
+
+    .ballg  { animation: ball 6s ease-in-out infinite; }
+    .paddleg{ animation: paddle 6s ease-in-out infinite; }
+
+    @keyframes ball {
+      0%   { transform: translate(0px,   0px);  }
+      14%  { transform: translate(-150px,-66px);}
+      26%  { transform: translate(-60px, 6px);  }
+      38%  { transform: translate(120px,-66px); }
+      52%  { transform: translate(40px,  8px);  }
+      66%  { transform: translate(180px,-60px); }
+      80%  { transform: translate(-20px, 4px);  }
+      90%  { transform: translate(-150px,-50px);}
+      100% { transform: translate(0px,   0px);  }
+    }
+    @keyframes paddle {
+      0%   { transform: translateX(0px);   }
+      26%  { transform: translateX(-60px); }
+      52%  { transform: translateX(40px);  }
+      80%  { transform: translateX(-20px); }
+      100% { transform: translateX(0px);   }
+    }
+
+    .p1 { animation: p1 6s linear infinite; }
+    .p2 { animation: p2 6s linear infinite; }
+    .p3 { animation: p3 6s linear infinite; }
+    .p4 { animation: p4 6s linear infinite; }
+    .p5 { animation: p5 6s linear infinite; }
+    .p6 { animation: p6 6s linear infinite; }
+    @keyframes p1 { 0%,12%{opacity:1} 14%,100%{opacity:0} }
+    @keyframes p2 { 0%,24%{opacity:1} 26%,100%{opacity:0} }
+    @keyframes p3 { 0%,36%{opacity:1} 38%,100%{opacity:0} }
+    @keyframes p4 { 0%,50%{opacity:1} 52%,100%{opacity:0} }
+    @keyframes p5 { 0%,64%{opacity:1} 66%,100%{opacity:0} }
+    @keyframes p6 { 0%,78%{opacity:1} 80%,100%{opacity:0} }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="720" height="190" rx="14"/>
+  <rect class="frame" x="0.5" y="0.5" width="719" height="189" rx="14"/>
+
+  <!-- Row 1 (red) -->
+  <rect class="r1"    x="43"  y="26" width="58" height="14" rx="3"/>
+  <rect class="r1 p1" x="107" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="171" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="235" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="299" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="363" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="427" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1 p3" x="491" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="555" y="26" width="58" height="14" rx="3"/>
+  <rect class="r1"    x="619" y="26" width="58" height="14" rx="3"/>
+
+  <!-- Row 2 (peach) -->
+  <rect class="r2"    x="43"  y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="107" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="171" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="235" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2 p2" x="299" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="363" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="427" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="491" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2 p5" x="555" y="46" width="58" height="14" rx="3"/>
+  <rect class="r2"    x="619" y="46" width="58" height="14" rx="3"/>
+
+  <!-- Row 3 (green) -->
+  <rect class="r3"    x="43"  y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="107" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3 p4" x="171" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="235" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="299" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3 p6" x="363" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="427" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="491" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="555" y="66" width="58" height="14" rx="3"/>
+  <rect class="r3"    x="619" y="66" width="58" height="14" rx="3"/>
+
+  <!-- Ball -->
+  <g class="ballg"><circle class="ball" cx="360" cy="150" r="6"/></g>
+
+  <!-- Paddle -->
+  <g class="paddleg"><rect class="paddle" x="318" y="168" width="84" height="10" rx="5"/></g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" role="img" aria-label="Animated Tetris in Catppuccin Mocha">
+  <style>
+    .bg { fill: #11111b; }
+    .frame { fill: none; stroke: #313244; stroke-width: 1; }
+    .well { fill: #181825; stroke: #585b70; stroke-width: 1; }
+    text { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+    .label { fill: #a6adc8; font-size: 12px; letter-spacing: 2px; }
+    .value { fill: #cdd6f4; font-size: 15px; letter-spacing: 2px; }
+    .title { fill: #cba6f7; font-size: 17px; letter-spacing: 5px; font-weight: 700; }
+
+    .dropA { animation: dropA 6s linear infinite; }
+    .dropB { animation: dropB 6s linear infinite; }
+    @keyframes dropA {
+      0%  { transform: translateY(-72px); opacity: 0; }
+      4%  { transform: translateY(-72px); opacity: 1; }
+      40% { transform: translateY(120px); opacity: 1; }
+      46% { transform: translateY(120px); opacity: 0; }
+      100%{ transform: translateY(120px); opacity: 0; }
+    }
+    @keyframes dropB {
+      0%  { transform: translateY(-72px); opacity: 0; }
+      50% { transform: translateY(-72px); opacity: 0; }
+      54% { transform: translateY(-72px); opacity: 1; }
+      92% { transform: translateY(120px); opacity: 1; }
+      97% { transform: translateY(120px); opacity: 0; }
+      100%{ transform: translateY(120px); opacity: 0; }
+    }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="720" height="240" rx="14"/>
+  <rect class="frame" x="0.5" y="0.5" width="719" height="239" rx="14"/>
+
+  <!-- well -->
+  <rect class="well" x="200" y="28" width="120" height="192" rx="3"/>
+
+  <!-- locked stack -->
+  <g>
+    <rect x="224.5" y="172.5" width="11" height="11" rx="1.5" fill="#a6e3a1"/>
+    <rect x="260.5" y="172.5" width="11" height="11" rx="1.5" fill="#f38ba8"/>
+    <rect x="296.5" y="172.5" width="11" height="11" rx="1.5" fill="#89b4fa"/>
+
+    <rect x="200.5" y="184.5" width="11" height="11" rx="1.5" fill="#fab387"/>
+    <rect x="224.5" y="184.5" width="11" height="11" rx="1.5" fill="#a6e3a1"/>
+    <rect x="236.5" y="184.5" width="11" height="11" rx="1.5" fill="#f9e2af"/>
+    <rect x="260.5" y="184.5" width="11" height="11" rx="1.5" fill="#f38ba8"/>
+    <rect x="284.5" y="184.5" width="11" height="11" rx="1.5" fill="#cba6f7"/>
+    <rect x="296.5" y="184.5" width="11" height="11" rx="1.5" fill="#89b4fa"/>
+    <rect x="308.5" y="184.5" width="11" height="11" rx="1.5" fill="#89dceb"/>
+
+    <rect x="200.5" y="196.5" width="11" height="11" rx="1.5" fill="#89b4fa"/>
+    <rect x="212.5" y="196.5" width="11" height="11" rx="1.5" fill="#89dceb"/>
+    <rect x="224.5" y="196.5" width="11" height="11" rx="1.5" fill="#a6e3a1"/>
+    <rect x="236.5" y="196.5" width="11" height="11" rx="1.5" fill="#f9e2af"/>
+    <rect x="248.5" y="196.5" width="11" height="11" rx="1.5" fill="#fab387"/>
+    <rect x="260.5" y="196.5" width="11" height="11" rx="1.5" fill="#f38ba8"/>
+    <rect x="284.5" y="196.5" width="11" height="11" rx="1.5" fill="#94e2d5"/>
+    <rect x="296.5" y="196.5" width="11" height="11" rx="1.5" fill="#cba6f7"/>
+    <rect x="308.5" y="196.5" width="11" height="11" rx="1.5" fill="#a6e3a1"/>
+
+    <rect x="200.5" y="208.5" width="11" height="11" rx="1.5" fill="#f38ba8"/>
+    <rect x="212.5" y="208.5" width="11" height="11" rx="1.5" fill="#fab387"/>
+    <rect x="224.5" y="208.5" width="11" height="11" rx="1.5" fill="#f9e2af"/>
+    <rect x="236.5" y="208.5" width="11" height="11" rx="1.5" fill="#a6e3a1"/>
+    <rect x="248.5" y="208.5" width="11" height="11" rx="1.5" fill="#89dceb"/>
+    <rect x="260.5" y="208.5" width="11" height="11" rx="1.5" fill="#89b4fa"/>
+    <rect x="284.5" y="208.5" width="11" height="11" rx="1.5" fill="#cba6f7"/>
+    <rect x="296.5" y="208.5" width="11" height="11" rx="1.5" fill="#94e2d5"/>
+    <rect x="308.5" y="208.5" width="11" height="11" rx="1.5" fill="#f38ba8"/>
+  </g>
+
+  <!-- falling T-piece (mauve) -->
+  <g transform="translate(236,28)">
+    <g class="dropA" fill="#cba6f7">
+      <rect x="0.5"  y="0.5"  width="11" height="11" rx="1.5"/>
+      <rect x="12.5" y="0.5"  width="11" height="11" rx="1.5"/>
+      <rect x="24.5" y="0.5"  width="11" height="11" rx="1.5"/>
+      <rect x="12.5" y="12.5" width="11" height="11" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- falling I-piece (sky), into the gap column -->
+  <g transform="translate(272,28)">
+    <g class="dropB" fill="#89dceb">
+      <rect x="0.5" y="0.5"  width="11" height="11" rx="1.5"/>
+      <rect x="0.5" y="12.5" width="11" height="11" rx="1.5"/>
+      <rect x="0.5" y="24.5" width="11" height="11" rx="1.5"/>
+      <rect x="0.5" y="36.5" width="11" height="11" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- side panel -->
+  <text class="title" x="360" y="28">TETRIS</text>
+
+  <text class="label" x="360" y="66">SCORE</text>
+  <text class="value" x="360" y="84">013370</text>
+
+  <text class="label" x="360" y="114">LEVEL</text>
+  <text class="value" x="360" y="132">07</text>
+
+  <text class="label" x="360" y="162">LINES</text>
+  <text class="value" x="360" y="180">042</text>
+
+  <text class="label" x="360" y="208">NEXT</text>
+  <g transform="translate(430,197)" fill="#f9e2af">
+    <rect x="0"  y="0" width="8" height="8" rx="1"/>
+    <rect x="9"  y="0" width="8" height="8" rx="1"/>
+    <rect x="0"  y="9" width="8" height="8" rx="1"/>
+    <rect x="9"  y="9" width="8" height="8" rx="1"/>
+  </g>
+</svg>

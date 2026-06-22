@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" role="img" aria-label="Animated Space Invaders in Catppuccin Mocha">
+  <defs>
+    <!-- classic crab invader, 22x16 on a 2px grid (fill inherited from each <use>) -->
+    <g id="inv">
+      <rect x="4" y="0" width="2" height="2"/><rect x="16" y="0" width="2" height="2"/>
+      <rect x="6" y="2" width="2" height="2"/><rect x="14" y="2" width="2" height="2"/>
+      <rect x="4" y="4" width="14" height="2"/>
+      <rect x="2" y="6" width="4" height="2"/><rect x="8" y="6" width="6" height="2"/><rect x="16" y="6" width="4" height="2"/>
+      <rect x="0" y="8" width="22" height="2"/>
+      <rect x="0" y="10" width="2" height="2"/><rect x="4" y="10" width="14" height="2"/><rect x="20" y="10" width="2" height="2"/>
+      <rect x="0" y="12" width="2" height="2"/><rect x="4" y="12" width="2" height="2"/><rect x="16" y="12" width="2" height="2"/><rect x="20" y="12" width="2" height="2"/>
+      <rect x="6" y="14" width="4" height="2"/><rect x="12" y="14" width="4" height="2"/>
+    </g>
+  </defs>
+
+  <style>
+    .bg { fill: #11111b; }
+    .frame { fill: none; stroke: #313244; stroke-width: 1; }
+    text { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 14px; letter-spacing: 2px; }
+
+    .fleet  { animation: march 5s steps(10) infinite; }
+    .cannon { animation: slide 5s ease-in-out infinite; }
+    .laser  { animation: fire 1s linear infinite; }
+    .ufo    { animation: cross 8s linear infinite; }
+    .x1 { animation: x1 5s linear infinite; }
+    .x2 { animation: x2 5s linear infinite; }
+    .x3 { animation: x3 5s linear infinite; }
+
+    @keyframes march { 0%{transform:translateX(0)} 50%{transform:translateX(150px)} 100%{transform:translateX(0)} }
+    @keyframes slide { 0%{transform:translateX(-150px)} 50%{transform:translateX(150px)} 100%{transform:translateX(-150px)} }
+    @keyframes fire {
+      0%{transform:translateY(0);opacity:1}
+      60%{transform:translateY(-120px);opacity:1}
+      61%{opacity:0}
+      99%{transform:translateY(-120px);opacity:0}
+      100%{transform:translateY(0);opacity:0}
+    }
+    @keyframes cross {
+      0%{transform:translateX(-40px);opacity:0}
+      4%{opacity:1}
+      28%{transform:translateX(740px);opacity:1}
+      29%{transform:translateX(740px);opacity:0}
+      100%{transform:translateX(740px);opacity:0}
+    }
+    @keyframes x1 { 0%,28%{opacity:1} 30%,100%{opacity:0} }
+    @keyframes x2 { 0%,48%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes x3 { 0%,68%{opacity:1} 70%,100%{opacity:0} }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="720" height="240" rx="14"/>
+  <rect class="frame" x="0.5" y="0.5" width="719" height="239" rx="14"/>
+
+  <text x="30" y="26" fill="#cdd6f4">SCORE 013370</text>
+  <text x="690" y="26" text-anchor="end" fill="#a6e3a1">HI-SCORE 999999</text>
+
+  <!-- mystery ship -->
+  <g transform="translate(0,46)">
+    <g class="ufo" fill="#f38ba8">
+      <rect x="10" y="0" width="8" height="3"/>
+      <rect x="2" y="3" width="24" height="4"/>
+      <rect x="0" y="7" width="28" height="3"/>
+    </g>
+  </g>
+
+  <!-- invader fleet -->
+  <g transform="translate(70,66)">
+    <g class="fleet">
+      <!-- row 0 (pink) -->
+      <use href="#inv" x="0"   y="0" fill="#f5c2e7"/><use href="#inv" x="46"  y="0" fill="#f5c2e7"/><use href="#inv" x="92"  y="0" fill="#f5c2e7"/><use href="#inv" x="138" y="0" fill="#f5c2e7"/><use href="#inv" x="184" y="0" fill="#f5c2e7"/><use href="#inv" x="230" y="0" fill="#f5c2e7"/><use href="#inv" x="276" y="0" fill="#f5c2e7" class="x1"/><use href="#inv" x="322" y="0" fill="#f5c2e7"/>
+      <!-- row 1 (mauve) -->
+      <use href="#inv" x="0"   y="30" fill="#cba6f7"/><use href="#inv" x="46"  y="30" fill="#cba6f7"/><use href="#inv" x="92"  y="30" fill="#cba6f7" class="x2"/><use href="#inv" x="138" y="30" fill="#cba6f7"/><use href="#inv" x="184" y="30" fill="#cba6f7"/><use href="#inv" x="230" y="30" fill="#cba6f7"/><use href="#inv" x="276" y="30" fill="#cba6f7"/><use href="#inv" x="322" y="30" fill="#cba6f7"/>
+      <!-- row 2 (blue) -->
+      <use href="#inv" x="0"   y="60" fill="#89b4fa"/><use href="#inv" x="46"  y="60" fill="#89b4fa"/><use href="#inv" x="92"  y="60" fill="#89b4fa"/><use href="#inv" x="138" y="60" fill="#89b4fa"/><use href="#inv" x="184" y="60" fill="#89b4fa" class="x3"/><use href="#inv" x="230" y="60" fill="#89b4fa"/><use href="#inv" x="276" y="60" fill="#89b4fa"/><use href="#inv" x="322" y="60" fill="#89b4fa"/>
+      <!-- row 3 (teal) -->
+      <use href="#inv" x="0"   y="90" fill="#94e2d5"/><use href="#inv" x="46"  y="90" fill="#94e2d5"/><use href="#inv" x="92"  y="90" fill="#94e2d5"/><use href="#inv" x="138" y="90" fill="#94e2d5"/><use href="#inv" x="184" y="90" fill="#94e2d5"/><use href="#inv" x="230" y="90" fill="#94e2d5"/><use href="#inv" x="276" y="90" fill="#94e2d5"/><use href="#inv" x="322" y="90" fill="#94e2d5"/>
+    </g>
+  </g>
+
+  <!-- player cannon + laser -->
+  <g transform="translate(360,212)">
+    <g class="cannon">
+      <rect class="laser" x="-1" y="-14" width="2" height="10" fill="#f38ba8"/>
+      <g fill="#a6e3a1">
+        <rect x="-15" y="6" width="30" height="5"/>
+        <rect x="-8" y="1" width="16" height="5"/>
+        <rect x="-2" y="-4" width="4" height="6"/>
+      </g>
+    </g>
+  </g>
+</svg>
