@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/invaders.svg" alt="Space Invaders — Catppuccin Mocha" width="720" />
+  <img src="assets/invaders.svg" alt="Space Invaders — Catppuccin Mocha" width="100%" />
 </p>
 
 <h1 align="center">Amey Pawar</h1>
