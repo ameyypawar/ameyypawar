@@ -26,7 +26,7 @@
     .x2 { animation: x2 5s linear infinite; }
     .x3 { animation: x3 5s linear infinite; }
 
-    @keyframes march { 0%{transform:translateX(0)} 50%{transform:translateX(150px)} 100%{transform:translateX(0)} }
+    @keyframes march { 0%{transform:translateX(0)} 50%{transform:translateX(60px)} 100%{transform:translateX(0)} }
     @keyframes slide { 0%{transform:translateX(-150px)} 50%{transform:translateX(150px)} 100%{transform:translateX(-150px)} }
     @keyframes fire {
       0%{transform:translateY(0);opacity:1}
@@ -63,16 +63,16 @@
   </g>
 
   <!-- invader fleet -->
-  <g transform="translate(70,66)">
+  <g transform="translate(43,66)">
     <g class="fleet">
       <!-- row 0 (pink) -->
-      <use href="#inv" x="0"   y="0" fill="#f5c2e7"/><use href="#inv" x="46"  y="0" fill="#f5c2e7"/><use href="#inv" x="92"  y="0" fill="#f5c2e7"/><use href="#inv" x="138" y="0" fill="#f5c2e7"/><use href="#inv" x="184" y="0" fill="#f5c2e7"/><use href="#inv" x="230" y="0" fill="#f5c2e7"/><use href="#inv" x="276" y="0" fill="#f5c2e7" class="x1"/><use href="#inv" x="322" y="0" fill="#f5c2e7"/>
+      <use href="#inv" x="0"   y="0" fill="#f5c2e7"/><use href="#inv" x="46"  y="0" fill="#f5c2e7"/><use href="#inv" x="92"  y="0" fill="#f5c2e7"/><use href="#inv" x="138" y="0" fill="#f5c2e7"/><use href="#inv" x="184" y="0" fill="#f5c2e7"/><use href="#inv" x="230" y="0" fill="#f5c2e7"/><use href="#inv" x="276" y="0" fill="#f5c2e7"/><use href="#inv" x="322" y="0" fill="#f5c2e7"/><use href="#inv" x="368" y="0" fill="#f5c2e7" class="x1"/><use href="#inv" x="414" y="0" fill="#f5c2e7"/><use href="#inv" x="460" y="0" fill="#f5c2e7"/><use href="#inv" x="506" y="0" fill="#f5c2e7"/><use href="#inv" x="552" y="0" fill="#f5c2e7"/>
       <!-- row 1 (mauve) -->
-      <use href="#inv" x="0"   y="30" fill="#cba6f7"/><use href="#inv" x="46"  y="30" fill="#cba6f7"/><use href="#inv" x="92"  y="30" fill="#cba6f7" class="x2"/><use href="#inv" x="138" y="30" fill="#cba6f7"/><use href="#inv" x="184" y="30" fill="#cba6f7"/><use href="#inv" x="230" y="30" fill="#cba6f7"/><use href="#inv" x="276" y="30" fill="#cba6f7"/><use href="#inv" x="322" y="30" fill="#cba6f7"/>
+      <use href="#inv" x="0"   y="30" fill="#cba6f7"/><use href="#inv" x="46"  y="30" fill="#cba6f7"/><use href="#inv" x="92"  y="30" fill="#cba6f7"/><use href="#inv" x="138" y="30" fill="#cba6f7" class="x2"/><use href="#inv" x="184" y="30" fill="#cba6f7"/><use href="#inv" x="230" y="30" fill="#cba6f7"/><use href="#inv" x="276" y="30" fill="#cba6f7"/><use href="#inv" x="322" y="30" fill="#cba6f7"/><use href="#inv" x="368" y="30" fill="#cba6f7"/><use href="#inv" x="414" y="30" fill="#cba6f7"/><use href="#inv" x="460" y="30" fill="#cba6f7"/><use href="#inv" x="506" y="30" fill="#cba6f7"/><use href="#inv" x="552" y="30" fill="#cba6f7"/>
       <!-- row 2 (blue) -->
-      <use href="#inv" x="0"   y="60" fill="#89b4fa"/><use href="#inv" x="46"  y="60" fill="#89b4fa"/><use href="#inv" x="92"  y="60" fill="#89b4fa"/><use href="#inv" x="138" y="60" fill="#89b4fa"/><use href="#inv" x="184" y="60" fill="#89b4fa" class="x3"/><use href="#inv" x="230" y="60" fill="#89b4fa"/><use href="#inv" x="276" y="60" fill="#89b4fa"/><use href="#inv" x="322" y="60" fill="#89b4fa"/>
+      <use href="#inv" x="0"   y="60" fill="#89b4fa"/><use href="#inv" x="46"  y="60" fill="#89b4fa"/><use href="#inv" x="92"  y="60" fill="#89b4fa"/><use href="#inv" x="138" y="60" fill="#89b4fa"/><use href="#inv" x="184" y="60" fill="#89b4fa"/><use href="#inv" x="230" y="60" fill="#89b4fa"/><use href="#inv" x="276" y="60" fill="#89b4fa"/><use href="#inv" x="322" y="60" fill="#89b4fa"/><use href="#inv" x="368" y="60" fill="#89b4fa"/><use href="#inv" x="414" y="60" fill="#89b4fa"/><use href="#inv" x="460" y="60" fill="#89b4fa" class="x3"/><use href="#inv" x="506" y="60" fill="#89b4fa"/><use href="#inv" x="552" y="60" fill="#89b4fa"/>
       <!-- row 3 (teal) -->
-      <use href="#inv" x="0"   y="90" fill="#94e2d5"/><use href="#inv" x="46"  y="90" fill="#94e2d5"/><use href="#inv" x="92"  y="90" fill="#94e2d5"/><use href="#inv" x="138" y="90" fill="#94e2d5"/><use href="#inv" x="184" y="90" fill="#94e2d5"/><use href="#inv" x="230" y="90" fill="#94e2d5"/><use href="#inv" x="276" y="90" fill="#94e2d5"/><use href="#inv" x="322" y="90" fill="#94e2d5"/>
+      <use href="#inv" x="0"   y="90" fill="#94e2d5"/><use href="#inv" x="46"  y="90" fill="#94e2d5"/><use href="#inv" x="92"  y="90" fill="#94e2d5"/><use href="#inv" x="138" y="90" fill="#94e2d5"/><use href="#inv" x="184" y="90" fill="#94e2d5"/><use href="#inv" x="230" y="90" fill="#94e2d5"/><use href="#inv" x="276" y="90" fill="#94e2d5"/><use href="#inv" x="322" y="90" fill="#94e2d5"/><use href="#inv" x="368" y="90" fill="#94e2d5"/><use href="#inv" x="414" y="90" fill="#94e2d5"/><use href="#inv" x="460" y="90" fill="#94e2d5"/><use href="#inv" x="506" y="90" fill="#94e2d5"/><use href="#inv" x="552" y="90" fill="#94e2d5"/>
     </g>
   </g>
 
