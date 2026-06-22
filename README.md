@@ -9,19 +9,11 @@
 <table align="center">
   <tr>
     <td align="center" width="420">
-      <a href="https://tubio.pro">
-        <img src="assets/tubio-card.png" alt="tubio" width="400" />
-      </a>
-      <br /><br />
       <strong><a href="https://tubio.pro">tubio</a></strong>
       <br />
       <sub>A Chrome extension that turns YouTube into a focused workspace — clean transcripts, distraction controls, and an AI chat that knows the video you're watching.</sub>
     </td>
     <td align="center" width="420">
-      <a href="https://gitfix.pro">
-        <img src="assets/gitfix-card.png" alt="gitfix" width="400" />
-      </a>
-      <br /><br />
       <strong><a href="https://gitfix.pro">gitfix</a></strong>
       <br />
       <sub>A VS Code extension that resolves merge conflicts the way a teammate would — by intent, not by line.</sub>
