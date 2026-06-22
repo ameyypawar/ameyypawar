@@ -18,15 +18,3 @@
   <a href="https://x.com/ameyypawr"><img src="https://img.shields.io/badge/X-181825?style=flat-square&logo=x&logoColor=cdd6f4" alt="X" /></a>
   <a href="mailto:ameypawar1237@gmail.com"><img src="https://img.shields.io/badge/Email-181825?style=flat-square&logo=gmail&logoColor=f38ba8" alt="Email" /></a>
 </p>
-
-<br />
-
-<div align="center">
-  <details>
-    <summary>🕹 insert coin</summary>
-    <br />
-    <img src="assets/breakout.svg" alt="Breakout — also playable on ameypawar.com" width="680" />
-    <br /><br />
-    <img src="assets/tetris.svg" alt="Tetris" width="680" />
-  </details>
-</div>
