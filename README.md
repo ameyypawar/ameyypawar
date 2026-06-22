@@ -6,23 +6,6 @@
 
 <br />
 
-<table align="center">
-  <tr>
-    <td align="center" width="420">
-      <strong><a href="https://tubio.pro">tubio</a></strong>
-      <br />
-      <sub>A Chrome extension that turns YouTube into a focused workspace — clean transcripts, distraction controls, and an AI chat that knows the video you're watching.</sub>
-    </td>
-    <td align="center" width="420">
-      <strong><a href="https://gitfix.pro">gitfix</a></strong>
-      <br />
-      <sub>A VS Code extension that resolves merge conflicts the way a teammate would — by intent, not by line.</sub>
-    </td>
-  </tr>
-</table>
-
-<br />
-
 <p align="center">
   <a href="https://buy.polar.sh/polar_cl_YXYBXAOKKrEuVxZKtOs7zmzA9dqs9eZmPn7a101fhBW"><img src="https://img.shields.io/badge/Sponsor-D946EF?logo=githubsponsors&logoColor=white" alt="Sponsor on Polar" /></a>
   <a href="https://github.com/ameyypawar"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" /></a>
